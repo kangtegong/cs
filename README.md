@@ -1,6 +1,6 @@
 # 이것이 취업을 위한 컴퓨터 과학이다: 학습 자료
 
-[도서 구매 링크]()
+[도서 구매 링크](https://m.yes24.com/Goods/Detail/130179291)
 
 ![cover](./etc/cover.png)
 
