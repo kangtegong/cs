@@ -4,6 +4,16 @@
 
 ![cover](./etc/cover.png)
 
+## 정오표
+
+**초판 기준 368 페이지에서 410 페이지까지  
+<mark>조판 오류(페이지 쪽 수 표기 누락)</mark>가 발견되었습니다.**
+
+정오표는 다음 링크에서 확인하실 수 있습니다.  
+불편을 드려 죄송합니다.
+
+[정오표](./etc/corrections.pdf)
+
 ## 추가 자료 목록
 
 - [컴퓨터 구조](./arch/)
@@ -23,9 +33,11 @@
   - [MongoDB 환경 구축](./db/mongodb/)
   - [Redis 환경 구축](./db/redis/)
 
-## csnote
+## csnote (https://csnote.net)
 
-https://csnote.net
+본 서적에서 등장한 1000개 이상의 컴퓨터 과학 용어들을 정리했습니다.
+
+![csnote logo](./etc/logo-ko.png)
 
 ### 질문이 있다면?
 
