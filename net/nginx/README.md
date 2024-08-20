@@ -61,18 +61,16 @@ $ docker exec -it nginx /bin/bash
 5. NGINX 컨테이너 내부에서 설정 파일을 작성합니다.
 
 ```
-http {
-    upstream myapp {
-        server web1:80;
-        server web2:80;
-    }
+upstream myapp {
+    server web1:80;
+    server web2:80;
+}
 
-    server {
-        listen 80;
+server {
+    listen 80;
 
-        location / {
-            proxy_pass http://myapp;
-        }
+    location / {
+        proxy_pass http://myapp;
     }
 }
 ```
