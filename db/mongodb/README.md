@@ -24,7 +24,7 @@ mongo                         8.0-rc    d7d2dce53977   40 hours ago   808MB
 3. 다음 명령어로 MySQL 컨테이너를 실행합니다. 
 
 ```
-$ docker run --name mongodb-container -v ~/data:/data/db -d -p 27017:27017 mongo:8.0-rc
+$ docker run --name mongodb-container -d -p 27017:27017 mongo:8.0-rc
 ```
 
 4. 다음 명령어로 MongoDB 컨테이너를 시작합니다.

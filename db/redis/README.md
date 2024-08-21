@@ -8,7 +8,6 @@
 1. 다음 명령어로 Redis (버전 7.4.0) 이미지를 다운로드합니다.
 
 ```
-$ docker pull redis
 $ docker pull redis:7.4.0
 ```
 
@@ -37,21 +36,19 @@ $ docker start redis-container
 5. 다음 명령어로 컨테이너 내부에 접속합니다.
 
 ```
-$ docker exec -it redis-container bash
+$ docker exec -it redis-container /bin/bash
 ```
 
 6. 다음과 같이 명령어를 입력할 공간이 나온다면, `redis-cli`라고 입력합니다. 
 
 
 ```
-root@13306fbb3236:/data#
 root@13306fbb3236:/data# redis-cli
 ```
 
 7. 다음과 같이 `127.0.0.1:6379>` 라는 입력 공간이 나온다면 성공입니다.
 
 ```
-root@13306fbb3236:/data#
 root@13306fbb3236:/data# redis-cli
 127.0.0.1:6379>
 ```
@@ -61,7 +58,6 @@ root@13306fbb3236:/data# redis-cli
 ```
 127.0.0.1:6379> ping
 PONG
-127.0.0.1:6379>
 ```
 
 
