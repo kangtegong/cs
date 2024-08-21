@@ -17,8 +17,9 @@ $ docker network create my_network
 서로 다른 포트에서 동작하는 두 개의 간단한 웹 서버 컨테이너를 생성합니다. 여기서는 nginx 이미지를 사용하여 웹 서버를 실행합니다.
 
 ```
-$ docker run -d --name web1 --network my_network -p 8081:80 nginx
-$ docker run -d --name web2 --network my_network -p 8082:80 nginx
+$ docker pull nginx:1.21
+$ docker run -d --name web1 --network my_network -p 8081:80 nginx:1.21
+$ docker run -d --name web2 --network my_network -p 8082:80 nginx:1.21
 ```
 
 3. 각 서버의 HTML 콘텐츠 수정
@@ -54,7 +55,7 @@ $ exit
 4. 로드 밸런싱을 수행할 컨테이너를 생성하고 내부로 접속합니다.
 
 ```
-$ docker run -d --name nginx --network my_network -p 8080:80 nginx
+$ docker run -d --name nginx --network my_network -p 8080:80 nginx:1.21
 $ docker exec -it nginx /bin/bash
 ```
 
