@@ -8,8 +8,6 @@
 1. 다음 명령어로 MongoDB 이미지를 다운로드합니다.
 
 ```
-$ docker pull mongo
-혹은 
 $ docker pull mongo:8.0-rc
 ```
 
@@ -26,7 +24,7 @@ mongo                         8.0-rc    d7d2dce53977   40 hours ago   808MB
 3. 다음 명령어로 MySQL 컨테이너를 실행합니다. 
 
 ```
-$ docker run --name mongodb-container -v ~/data:/data/db -d -p 27017:27017 mongo
+$ docker run --name mongodb-container -v ~/data:/data/db -d -p 27017:27017 mongo:8.0-rc
 ```
 
 4. 다음 명령어로 MongoDB 컨테이너를 시작합니다.
@@ -38,14 +36,13 @@ $ docker start mongodb-container
 5. 다음 명령어로 MongoDB 컨테이너 내부에 접속합니다.
 
 ```
-$ docker exec -it mongodb-container bash
+$ docker exec -it mongodb-container /bin/bash
 ```
 
 6. 다음과 같이 명령어를 입력할 공간이 나온다면, `mongosh`라고 입력합니다. 
 
 
 ```
-root@6130fda7f276:/#
 root@6130fda7f276:/# mongosh
 ```
 
